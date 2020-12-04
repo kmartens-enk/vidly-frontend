@@ -85,7 +85,7 @@ class Movies extends Component {
             <MoviesTable
               movies={movies}
               sortColumn={sortColumn}
-              onDelete={this.handleLiked}
+              onDelete={this.handleDelete}
               onLike={this.handleLiked}
               onSort={this.handleSort}
             />
