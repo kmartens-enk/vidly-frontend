@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import { getMovies } from "../services/fakeMovieService";
-import Pagination from "./pagination";
+import Pagination from "./common/pagination";
 import paginate from "../utils/paginate";
-import FilterBox from "./filterbox";
+import FilterBox from "./common/filterbox";
 import { getGenres } from "../services/fakeGenreService";
 import MoviesTable from "./moviesTable";
 import _ from "lodash";
@@ -66,7 +66,7 @@ class Movies extends Component {
 
     const count = filtered.length;
 
-    if (count === 0) return <p>No movies in the database</p>;
+    if (allMovies.length === 0) return <p>No movies in the database</p>;
 
     const movies = paginate(sorted, page, pageSize);
 
