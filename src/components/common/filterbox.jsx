@@ -1,14 +1,13 @@
 import PropTypes from "prop-types";
 import React from "react";
 
-const FilterBox = (props) => {
-  const {
-    selectedItem,
-    items,
-    onItemSelect,
-    textProperty,
-    valueProperty,
-  } = props;
+const FilterBox = ({
+  selectedItem,
+  items,
+  onItemSelect,
+  textProperty,
+  valueProperty,
+}) => {
   const activeClass = "list-group-item active";
   const normalClass = "list-group-item";
   return (
