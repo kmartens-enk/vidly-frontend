@@ -14,6 +14,10 @@ class RegisterForm extends Form {
     name: Joi.string().required().label("Name"),
   };
 
+  doSubmit = () => {
+    console.log(this.state.data);
+  };
+
   render() {
     return (
       <div>
